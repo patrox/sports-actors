@@ -1,0 +1,686 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Polar Flow",
+		"_postman_id": "d0795a85-9f17-d408-3a4d-1f563bc9f08f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User Info",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authorization Code",
+			"request": {
+				"url": {
+					"raw": "https://flow.polar.com/oauth2/authorization?response_type=code&scope=accesslink.read_all&client_id=ac001bab-6acf-494d-a0e9-865e860f8fcf",
+					"protocol": "https",
+					"host": [
+						"flow",
+						"polar",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"authorization"
+					],
+					"query": [
+						{
+							"key": "response_type",
+							"value": "code",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "scope",
+							"value": "accesslink.read_all",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "client_id",
+							"value": "ac001bab-6acf-494d-a0e9-865e860f8fcf",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Token",
+			"request": {
+				"url": "https://polarremote.com/v2/oauth2/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "f03cf781bf63ce2ab3b71c7c4085141c",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d7650f81-64ec-4a9a-8c6d-af2a389ba854",
+					"name": "response",
+					"originalRequest": {
+						"url": "https://polarremote.com/v2/oauth2/token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"name": "Authorization",
+								"value": "Basic YWMwMDFiYWItNmFjZi00OTRkLWEwZTktODY1ZTg2MGY4ZmNmOmQwZjFmMzU4LWZmODYtNGI2YS1hZGUyLTViMWY4ZTMxMDg5YQ==",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "f03cf781bf63ce2ab3b71c7c4085141c",
+									"description": "",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "Access-Control-Expose-Headers",
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Length",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 04 Jul 2017 17:13:54 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Expires",
+							"key": "Expires",
+							"value": "Thu, 01 Jan 1970 00:00:00 GMT",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Resin/4.0.38",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Jersey-Trace-000",
+							"key": "X-Jersey-Trace-000",
+							"value": "accept root resource classes: \"/oauth2/token\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-001",
+							"key": "X-Jersey-Trace-001",
+							"value": "match path \"/oauth2/token\" -> \"/application\\.wadl(/.*)?\", \"/health-check(/.*)?\", \"/application(/.*)?\", \"/register(/.*)?\", \"/sports(/.*)?\", \"/oauth2(/.*)?\", \"/users(/.*)?\", \"/login(/.*)?\", \"/time(/.*)?\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-002",
+							"key": "X-Jersey-Trace-002",
+							"value": "accept right hand path java.util.regex.Matcher[pattern=/oauth2(/.*)? region=0,13 lastmatch=/oauth2/token]: \"/oauth2/token\" -> \"/oauth2\" : \"/token\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-003",
+							"key": "X-Jersey-Trace-003",
+							"value": "accept resource: \"oauth2\" -> @Path(\"/oauth2\") fi.polar.remote.oauth2.resource.OAuth2TokenEndpoint@70927bf9",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-004",
+							"key": "X-Jersey-Trace-004",
+							"value": "match path \"/token\" -> \"/token(/)?\", \"\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-005",
+							"key": "X-Jersey-Trace-005",
+							"value": "accept right hand path java.util.regex.Matcher[pattern=/token(/)? region=0,6 lastmatch=/token]: \"/token\" -> \"/token\" : \"\"",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-006",
+							"key": "X-Jersey-Trace-006",
+							"value": "accept sub-resource methods: \"oauth2\" : \"/token\", POST -> fi.polar.remote.oauth2.resource.OAuth2TokenEndpoint@70927bf9",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-007",
+							"key": "X-Jersey-Trace-007",
+							"value": "matched sub-resource method: @Path(\"/token\") public fi.polar.remote.oauth2.representation.PrOAuth2TokenResponse fi.polar.remote.oauth2.resource.OAuth2TokenEndpoint.token(fi.polar.remote.oauth2.representation.PrOAuth2TokenRequest) throws fi.polar.remote.oauth2.exception.OAuth2TokenException,fi.polar.platform.exception.ReferentialViolationException",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-008",
+							"key": "X-Jersey-Trace-008",
+							"value": "matched message body reader: class fi.polar.remote.oauth2.representation.PrOAuth2TokenRequest, \"application/x-www-form-urlencoded\" -> fi.polar.remote.oauth2.provider.OAuth2RequestProvider@54032bf1",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Jersey-Trace-009",
+							"key": "X-Jersey-Trace-009",
+							"value": "matched message body writer: fi.polar.remote.oauth2.representation.PrOAuth2TokenResponse@64fa6e9c, \"application/json; charset=UTF-8\" -> com.sun.jersey.json.impl.provider.entity.JacksonProviderProxy@62250db3",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 714,
+					"body": "{\"access_token\":\"3b29fc0786194b32855d9984db49e752\",\"token_type\":\"bearer\",\"expires_in\":473039999,\"x_user_id\":36101474}"
+				}
+			]
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"member-id\": \"monia\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pull Notifications",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/notifications",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "a681cda5-faee-4c00-98b1-4503a0e516c3",
+					"name": "Non-empty notifications response",
+					"originalRequest": {
+						"url": "https://www.polaraccesslink.com/v3/notifications",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"name": "Authorization",
+								"value": "Basic YWMwMDFiYWItNmFjZi00OTRkLWEwZTktODY1ZTg2MGY4ZmNmOmQwZjFmMzU4LWZmODYtNGI2YS1hZGUyLTViMWY4ZTMxMDg5YQ==",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "281",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 04 Jul 2017 19:28:21 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "RateLimit-Limit",
+							"key": "RateLimit-Limit",
+							"value": "2000, 100000",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Reset",
+							"key": "RateLimit-Reset",
+							"value": "690, 64371",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Usage",
+							"key": "RateLimit-Usage",
+							"value": "2, 32",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 364,
+					"body": "{\"available-user-data\":[{\"user-id\":36101474,\"data-type\":\"EXERCISE\",\"url\":\"https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions\"},{\"user-id\":36101474,\"data-type\":\"ACTIVITY_SUMMARY\",\"url\":\"https://www.polaraccesslink.com/v3/users/36101474/activity-transactions\"}]}"
+				}
+			]
+		},
+		{
+			"name": "Get Exercise Transactions",
+			"request": {
+				"url": {
+					"raw": "https://www.polaraccesslink.com/v3/exercise-transactions?date=2017-07-04",
+					"protocol": "https",
+					"host": [
+						"www",
+						"polaraccesslink",
+						"com"
+					],
+					"path": [
+						"v3",
+						"exercise-transactions"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2017-07-04",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWMwMDFiYWItNmFjZi00OTRkLWEwZTktODY1ZTg2MGY4ZmNmOmQwZjFmMzU4LWZmODYtNGI2YS1hZGUyLTViMWY4ZTMxMDg5YQ==",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Exercise Transaction",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "531d0d7d-743b-4d7d-a797-988778957bc0",
+					"name": "Created exercise transaction",
+					"originalRequest": {
+						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "0",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 04 Jul 2017 20:40:38 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Location",
+							"key": "Location",
+							"value": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
+							"description": "Used in redirection, or when a new resource has been created."
+						},
+						{
+							"name": "RateLimit-Limit",
+							"key": "RateLimit-Limit",
+							"value": "2000, 100000",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Reset",
+							"key": "RateLimit-Reset",
+							"value": "651, 60034",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Usage",
+							"key": "RateLimit-Usage",
+							"value": "4, 36",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 237,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "List exercises",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d5828888-1b58-4c9b-9416-f2258b47f7eb",
+					"name": "Non empty exercises response",
+					"originalRequest": {
+						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "118",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 04 Jul 2017 20:47:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "RateLimit-Limit",
+							"key": "RateLimit-Limit",
+							"value": "2000, 100000",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Reset",
+							"key": "RateLimit-Reset",
+							"value": "240, 59623",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Usage",
+							"key": "RateLimit-Usage",
+							"value": "5, 37",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 450,
+					"body": "{\"exercises\":[\"https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331\"]}"
+				}
+			]
+		},
+		{
+			"name": "Commit transaction",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7581d8c2-abca-45cb-8aee-39d40eaa6ac3",
+					"name": "Non empty exercises response",
+					"originalRequest": {
+						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+								"description": "",
+								"warning": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "118",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 04 Jul 2017 20:47:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "RateLimit-Limit",
+							"key": "RateLimit-Limit",
+							"value": "2000, 100000",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Reset",
+							"key": "RateLimit-Reset",
+							"value": "240, 59623",
+							"description": "Custom header"
+						},
+						{
+							"name": "RateLimit-Usage",
+							"key": "RateLimit-Usage",
+							"value": "5, 37",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 450,
+					"body": "{\"exercises\":[\"https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331\"]}"
+				}
+			]
+		},
+		{
+			"name": "Get Exercise Summary",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Exercise As GPX",
+			"request": {
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331/gpx",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3b29fc0786194b32855d9984db49e752",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
