@@ -101,7 +101,7 @@
 			},
 			"response": [
 				{
-					"id": "d7650f81-64ec-4a9a-8c6d-af2a389ba854",
+					"id": "0a899807-92b1-4f07-acea-c1871c396d34",
 					"name": "response",
 					"originalRequest": {
 						"url": "https://polarremote.com/v2/oauth2/token",
@@ -306,7 +306,7 @@
 			},
 			"response": [
 				{
-					"id": "a681cda5-faee-4c00-98b1-4503a0e516c3",
+					"id": "13825fc5-9fa6-4c38-8720-ffa4f03a199d",
 					"name": "Non-empty notifications response",
 					"originalRequest": {
 						"url": "https://www.polaraccesslink.com/v3/notifications",
@@ -425,7 +425,7 @@
 			},
 			"response": [
 				{
-					"id": "531d0d7d-743b-4d7d-a797-988778957bc0",
+					"id": "7a0e1074-95d7-4663-a725-1cb4b592b0ed",
 					"name": "Created exercise transaction",
 					"originalRequest": {
 						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions",
@@ -505,7 +505,7 @@
 			},
 			"response": [
 				{
-					"id": "d5828888-1b58-4c9b-9416-f2258b47f7eb",
+					"id": "2ec9fb8f-5c63-4a78-8b84-03e74bf82aad",
 					"name": "Non empty exercises response",
 					"originalRequest": {
 						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
@@ -585,7 +585,7 @@
 			},
 			"response": [
 				{
-					"id": "7581d8c2-abca-45cb-8aee-39d40eaa6ac3",
+					"id": "e506443a-8a41-4def-be4f-bb05d3650bc3",
 					"name": "Non empty exercises response",
 					"originalRequest": {
 						"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359",
@@ -651,7 +651,7 @@
 		{
 			"name": "Get Exercise Summary",
 			"request": {
-				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331",
+				"url": "https://www.polaraccesslink.com/v3/users/36101474/exercise-transactions/159331359/exercises/54279331/gpx",
 				"method": "GET",
 				"header": [
 					{
