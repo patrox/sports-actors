@@ -1,0 +1,1434 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Endomondo",
+		"_postman_id": "828f3df0-e449-761c-f529-f4cac9cd0699",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"url": {
+					"raw": "https://api.mobile.endomondo.com/mobile/auth?deviceId=device&email=patryk.najda@wp.pl&password=lw14tk0&country=PL&action=PAIR",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mobile",
+						"endomondo",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "deviceId",
+							"value": "device",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "patryk.najda@wp.pl",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "lw14tk0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "country",
+							"value": "PL",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "action",
+							"value": "PAIR",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d90ed741-22ca-4ca4-8b51-026924675bf0",
+					"name": "Successful authorization",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/auth?deviceId=device&email=patryk.najda@wp.pl&password=lw14tk0&country=PL&action=PAIR",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "device",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "patryk.najda@wp.pl",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "lw14tk0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "country",
+									"value": "PL",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "action",
+									"value": "PAIR",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Y3BzOkNmaDRoWmo2RnhZM0hZUW94RHIz",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "163",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 19:37:52 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "NOT_SET",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 499,
+					"body": "OK\naction=PAIRED\nauthToken=K-0wvH-1TnSzjb3V2dh7KA\nmeasure=METRIC\ndisplayName=Patryk Najda\nuserId=1608787\nfacebookConnected=true\nsecureToken=ENanqxwLTo2NzILEHT8tlg\n"
+				}
+			]
+		},
+		{
+			"name": "Get Workouts",
+			"request": {
+				"url": {
+					"raw": "https://api.mobile.endomondo.com/mobile/api/workout/list?authToken=K-0wvH-1TnSzjb3V2dh7KA&fields=device,simple,basic,lcp_count&maxResults=1&userId=1608787",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mobile",
+						"endomondo",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"api",
+						"workout",
+						"list"
+					],
+					"query": [
+						{
+							"key": "authToken",
+							"value": "K-0wvH-1TnSzjb3V2dh7KA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fields",
+							"value": "device,simple,basic,lcp_count",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "maxResults",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userId",
+							"value": "1608787",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "deflate",
+							"value": "true",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "compression",
+							"value": "deflate",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "572567e8-802a-4b20-a463-68b7cc022daf",
+					"name": "Successful authorization",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/auth?deviceId=device&email=patryk.najda@wp.pl&password=lw14tk0&country=PL&action=PAIR",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "device",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "patryk.najda@wp.pl",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "lw14tk0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "country",
+									"value": "PL",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "action",
+									"value": "PAIR",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Y3BzOkNmaDRoWmo2RnhZM0hZUW94RHIz",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "163",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 19:37:52 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "NOT_SET",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 499,
+					"body": "OK\naction=PAIRED\nauthToken=K-0wvH-1TnSzjb3V2dh7KA\nmeasure=METRIC\ndisplayName=Patryk Najda\nuserId=1608787\nfacebookConnected=true\nsecureToken=ENanqxwLTo2NzILEHT8tlg\n"
+				},
+				{
+					"id": "cfa6500d-da00-4a41-81b4-3ed01dee54c5",
+					"name": "Successfull Workouts Response",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/api/workout/list?authToken=K-0wvH-1TnSzjb3V2dh7KA&fields=device,simple,basic,lcp_count&maxResults=20&userId=1608787",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"api",
+								"workout",
+								"list"
+							],
+							"query": [
+								{
+									"key": "authToken",
+									"value": "K-0wvH-1TnSzjb3V2dh7KA",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "fields",
+									"value": "device,simple,basic,lcp_count",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "maxResults",
+									"value": "20",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "userId",
+									"value": "1608787",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deflate",
+									"value": "true",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "compression",
+									"value": "deflate",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+								"description": "",
+								"warning": "Restricted Header (use Postman Interceptor)"
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "2308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 22:29:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "1608787",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 228,
+					"body": "{\"data\":[{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":304,\"distance\":6.28661,\"speed_avg\":10.982267689850046,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":123,\"privacy_workout\":1,\"calories\":485,\"duration\":2060.758,\"altitude_min\":156.4,\"start_time\":\"2017-06-27 15:05:47 UTC\",\"descent\":359,\"speed_max\":12.2616,\"ascent\":398,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":951859428,\"burgers_burned\":0.8981481,\"sport\":0,\"device\":{\"workout_id\":\"12536216680-1-[1822051140]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":334.6,\"distance\":14.359672547370609,\"speed_avg\":10.295722200863212,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":465.783,\"duration\":5021,\"altitude_min\":230.6,\"start_time\":\"2017-06-27 05:24:02 UTC\",\"descent\":406.2,\"speed_max\":188.392,\"ascent\":353.8,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":1},\"id\":955591728,\"burgers_burned\":0.8625611,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":286,\"distance\":8.46193,\"speed_avg\":10.606665536234136,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":86,\"privacy_workout\":1,\"calories\":658,\"duration\":2872.057,\"altitude_min\":229.2,\"start_time\":\"2017-06-25 19:21:39 UTC\",\"descent\":218,\"speed_max\":13.1688,\"ascent\":216,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":950739286,\"burgers_burned\":1.2185185,\"sport\":0,\"device\":{\"workout_id\":\"12499233544-1-[1818945406]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.2,\"distance\":10.02059,\"speed_avg\":9.918337451066973,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":786,\"duration\":3637.114,\"altitude_min\":232.6,\"start_time\":\"2017-06-24 07:41:34 UTC\",\"descent\":223,\"speed_max\":11.556,\"ascent\":224,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":949669968,\"burgers_burned\":1.4555556,\"sport\":0,\"device\":{\"workout_id\":\"12467372424-1-[1815387359]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.8,\"distance\":7.58807,\"speed_avg\":9.533459878194463,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":592,\"duration\":2865.387,\"altitude_min\":191.8,\"start_time\":\"2017-06-23 04:50:15 UTC\",\"descent\":261,\"speed_max\":12.8664,\"ascent\":208,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":949272874,\"burgers_burned\":1.0962963,\"sport\":0,\"device\":{\"workout_id\":\"12451017777-1-[1814051656]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":238.2,\"distance\":16.80997085571289,\"speed_avg\":10.53733154807007,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":1383,\"duration\":5743,\"altitude_min\":189.6,\"start_time\":\"2017-06-22 04:05:27 UTC\",\"descent\":330,\"speed_max\":11.9232,\"ascent\":352,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":948561514,\"burgers_burned\":2.5611112,\"sport\":0,\"device\":{\"workout_id\":\"12425264920-1-[1811875924]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":316.4,\"distance\":7.024109999999999,\"speed_avg\":9.68032356054414,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":552,\"duration\":2612.185,\"altitude_min\":224.2,\"start_time\":\"2017-06-20 18:33:49 UTC\",\"descent\":376,\"speed_max\":12.2256,\"ascent\":420,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":947766244,\"burgers_burned\":1.0222223,\"sport\":0,\"device\":{\"workout_id\":\"12396625231-1-[1809265801]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":280.6,\"distance\":7.05785,\"speed_avg\":11.169875056765402,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":572.354,\"duration\":2274.713,\"altitude_min\":239.2,\"start_time\":\"2017-06-18 07:54:24 UTC\",\"descent\":182,\"speed_max\":14.7816,\"ascent\":187,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":4},\"id\":946428657,\"burgers_burned\":1.0599148,\"sport\":0,\"device\":{\"workout_id\":\"12354039776-1-[1805490388]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":263.6,\"distance\":5.26837,\"speed_avg\":2.060254250507619,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":64,\"privacy_workout\":1,\"calories\":211,\"duration\":9205.724,\"altitude_min\":212.6,\"start_time\":\"2017-06-15 08:59:00 UTC\",\"descent\":275,\"speed_max\":48.4704,\"ascent\":253,\"cadence_avg\":57,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":944416066,\"burgers_burned\":0.39074075,\"sport\":22,\"device\":{\"workout_id\":\"12288971732-1-[1798928214]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":349,\"distance\":20.1927,\"speed_avg\":9.60262820351933,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1694,\"duration\":7570.19,\"altitude_min\":238.2,\"start_time\":\"2017-06-13 15:02:26 UTC\",\"descent\":676,\"speed_max\":12.4272,\"ascent\":693.2,\"cadence_avg\":80,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":943212517,\"burgers_burned\":3.137037,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":300,\"distance\":6.144819999999999,\"speed_avg\":9.928107303175633,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":482,\"duration\":2228.154,\"altitude_min\":242.6,\"start_time\":\"2017-06-13 06:24:17 UTC\",\"descent\":347,\"speed_max\":11.556,\"ascent\":334,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":942960463,\"burgers_burned\":0.8925926,\"sport\":0,\"device\":{\"workout_id\":\"12244588386-1-[1794746400]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":317,\"distance\":11.99904,\"speed_avg\":9.347382361246806,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":935,\"duration\":4621.245,\"altitude_min\":252.6,\"start_time\":\"2017-06-11 07:19:44 UTC\",\"descent\":465,\"speed_max\":12.3624,\"ascent\":451,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":941639877,\"burgers_burned\":1.7314814,\"sport\":0,\"device\":{\"workout_id\":\"12201159643-1-[1790591801]\"},\"live\":false},{\"altitude_max\":300.4,\"heart_rate_avg\":163,\"distance\":7.91395,\"speed_avg\":9.707912995418337,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":128,\"duration\":2934.742,\"heart_rate_max\":184,\"ascent\":253,\"cadence_avg\":81,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":935624317,\"live\":false,\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"privacy_workout\":1,\"calories\":647,\"altitude_min\":263.2,\"start_time\":\"2017-06-01 17:43:55 UTC\",\"descent\":275,\"speed_max\":12.3624,\"is_valid\":true,\"burgers_burned\":1.1981481,\"sport\":0,\"device\":{\"workout_id\":\"12007497301-1-[1772437594]\"}},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":761.6,\"distance\":27.836779999999997,\"speed_avg\":21.60205957248307,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":900,\"duration\":4639.021,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 10:22:36 UTC\",\"descent\":723,\"speed_max\":58.0104,\"ascent\":257,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":932613689,\"burgers_burned\":1.6666666,\"sport\":2,\"device\":{\"workout_id\":\"11918151251-1-[1763666795]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":760.4,\"distance\":9.12884,\"speed_avg\":10.583040959589145,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":577,\"duration\":3105.329,\"altitude_min\":327,\"start_time\":\"2017-05-28 08:45:20 UTC\",\"descent\":286,\"speed_max\":31.6764,\"ascent\":658,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":932613524,\"burgers_burned\":1.0685185,\"sport\":2,\"device\":{\"workout_id\":\"11918147597-1-[1763666281]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":53.27981,\"speed_avg\":15.481232546443739,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1693.72,\"duration\":12389.667000000001,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":1562.8,\"speed_max\":58.0104,\"ascent\":1049,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":16},\"id\":933153567,\"burgers_burned\":3.1365185,\"sport\":2,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":16.31419,\"speed_avg\":12.643073443642274,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":674,\"duration\":4645.317,\"altitude_min\":297.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":925,\"speed_max\":56.7684,\"ascent\":485,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":6},\"id\":932613422,\"burgers_burned\":1.2481482,\"sport\":2,\"device\":{\"workout_id\":\"11918145809-1-[1763666049]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":387,\"distance\":79.35486999999999,\"speed_avg\":20.406198286273117,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":2595,\"duration\":13999.547,\"altitude_min\":232,\"start_time\":\"2017-05-20 07:19:04 UTC\",\"descent\":1118,\"speed_max\":54.2808,\"ascent\":1039,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":927194081,\"burgers_burned\":4.8055553,\"sport\":2,\"device\":{\"workout_id\":\"11749445605-1-[1743840846]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":308.6,\"distance\":5.67201,\"speed_avg\":9.694947186199805,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":444,\"duration\":2106.173,\"altitude_min\":243,\"start_time\":\"2017-05-04 19:04:54 UTC\",\"descent\":264,\"speed_max\":12.4632,\"ascent\":202,\"cadence_avg\":82,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":917197608,\"burgers_burned\":0.82222223,\"sport\":0,\"device\":{\"workout_id\":\"11429787314-1-[1714706476]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":290,\"distance\":6.4600100000000005,\"speed_avg\":10.822841857192321,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":496,\"duration\":2148.792,\"altitude_min\":250.6,\"start_time\":\"2017-05-04 18:07:16 UTC\",\"descent\":233,\"speed_max\":13.3704,\"ascent\":255,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":917197524,\"burgers_burned\":0.91851854,\"sport\":0,\"device\":{\"workout_id\":\"11429784550-1-[1714706117]\"},\"live\":false}]}"
+				}
+			]
+		},
+		{
+			"name": "Create Workout",
+			"request": {
+				"url": {
+					"raw": "https://api.mobile.endomondo.com/mobile/track?userId=1608787&authToken=K-0wvH-1TnSzjb3V2dh7KA&duration=600&distance=10.12&trackPoints=false&workoutId=42",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mobile",
+						"endomondo",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"track"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1608787",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "authToken",
+							"value": "K-0wvH-1TnSzjb3V2dh7KA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "duration",
+							"value": "600",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "distance",
+							"value": "10.12",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "trackPoints",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "workoutId",
+							"value": "42",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "107be267-26e4-4dde-913c-219a8dc38f5e",
+					"name": "Successful authorization",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/auth?deviceId=device&email=patryk.najda@wp.pl&password=lw14tk0&country=PL&action=PAIR",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "device",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "patryk.najda@wp.pl",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "lw14tk0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "country",
+									"value": "PL",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "action",
+									"value": "PAIR",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Y3BzOkNmaDRoWmo2RnhZM0hZUW94RHIz",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "163",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 19:37:52 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "NOT_SET",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 499,
+					"body": "OK\naction=PAIRED\nauthToken=K-0wvH-1TnSzjb3V2dh7KA\nmeasure=METRIC\ndisplayName=Patryk Najda\nuserId=1608787\nfacebookConnected=true\nsecureToken=ENanqxwLTo2NzILEHT8tlg\n"
+				},
+				{
+					"id": "89f63032-d2c1-412e-9702-43033d2db258",
+					"name": "Successfull Workouts Response",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/api/workout/list?authToken=K-0wvH-1TnSzjb3V2dh7KA&fields=device,simple,basic,lcp_count&maxResults=20&userId=1608787",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"api",
+								"workout",
+								"list"
+							],
+							"query": [
+								{
+									"key": "authToken",
+									"value": "K-0wvH-1TnSzjb3V2dh7KA",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "fields",
+									"value": "device,simple,basic,lcp_count",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "maxResults",
+									"value": "20",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "userId",
+									"value": "1608787",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deflate",
+									"value": "true",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "compression",
+									"value": "deflate",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+								"description": "",
+								"warning": "Restricted Header (use Postman Interceptor)"
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "2308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 22:29:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "1608787",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 228,
+					"body": "{\"data\":[{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":304,\"distance\":6.28661,\"speed_avg\":10.982267689850046,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":123,\"privacy_workout\":1,\"calories\":485,\"duration\":2060.758,\"altitude_min\":156.4,\"start_time\":\"2017-06-27 15:05:47 UTC\",\"descent\":359,\"speed_max\":12.2616,\"ascent\":398,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":951859428,\"burgers_burned\":0.8981481,\"sport\":0,\"device\":{\"workout_id\":\"12536216680-1-[1822051140]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":334.6,\"distance\":14.359672547370609,\"speed_avg\":10.295722200863212,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":465.783,\"duration\":5021,\"altitude_min\":230.6,\"start_time\":\"2017-06-27 05:24:02 UTC\",\"descent\":406.2,\"speed_max\":188.392,\"ascent\":353.8,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":1},\"id\":955591728,\"burgers_burned\":0.8625611,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":286,\"distance\":8.46193,\"speed_avg\":10.606665536234136,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":86,\"privacy_workout\":1,\"calories\":658,\"duration\":2872.057,\"altitude_min\":229.2,\"start_time\":\"2017-06-25 19:21:39 UTC\",\"descent\":218,\"speed_max\":13.1688,\"ascent\":216,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":950739286,\"burgers_burned\":1.2185185,\"sport\":0,\"device\":{\"workout_id\":\"12499233544-1-[1818945406]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.2,\"distance\":10.02059,\"speed_avg\":9.918337451066973,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":786,\"duration\":3637.114,\"altitude_min\":232.6,\"start_time\":\"2017-06-24 07:41:34 UTC\",\"descent\":223,\"speed_max\":11.556,\"ascent\":224,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":949669968,\"burgers_burned\":1.4555556,\"sport\":0,\"device\":{\"workout_id\":\"12467372424-1-[1815387359]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.8,\"distance\":7.58807,\"speed_avg\":9.533459878194463,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":592,\"duration\":2865.387,\"altitude_min\":191.8,\"start_time\":\"2017-06-23 04:50:15 UTC\",\"descent\":261,\"speed_max\":12.8664,\"ascent\":208,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":949272874,\"burgers_burned\":1.0962963,\"sport\":0,\"device\":{\"workout_id\":\"12451017777-1-[1814051656]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":238.2,\"distance\":16.80997085571289,\"speed_avg\":10.53733154807007,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":1383,\"duration\":5743,\"altitude_min\":189.6,\"start_time\":\"2017-06-22 04:05:27 UTC\",\"descent\":330,\"speed_max\":11.9232,\"ascent\":352,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":948561514,\"burgers_burned\":2.5611112,\"sport\":0,\"device\":{\"workout_id\":\"12425264920-1-[1811875924]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":316.4,\"distance\":7.024109999999999,\"speed_avg\":9.68032356054414,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":552,\"duration\":2612.185,\"altitude_min\":224.2,\"start_time\":\"2017-06-20 18:33:49 UTC\",\"descent\":376,\"speed_max\":12.2256,\"ascent\":420,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":947766244,\"burgers_burned\":1.0222223,\"sport\":0,\"device\":{\"workout_id\":\"12396625231-1-[1809265801]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":280.6,\"distance\":7.05785,\"speed_avg\":11.169875056765402,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":572.354,\"duration\":2274.713,\"altitude_min\":239.2,\"start_time\":\"2017-06-18 07:54:24 UTC\",\"descent\":182,\"speed_max\":14.7816,\"ascent\":187,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":4},\"id\":946428657,\"burgers_burned\":1.0599148,\"sport\":0,\"device\":{\"workout_id\":\"12354039776-1-[1805490388]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":263.6,\"distance\":5.26837,\"speed_avg\":2.060254250507619,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":64,\"privacy_workout\":1,\"calories\":211,\"duration\":9205.724,\"altitude_min\":212.6,\"start_time\":\"2017-06-15 08:59:00 UTC\",\"descent\":275,\"speed_max\":48.4704,\"ascent\":253,\"cadence_avg\":57,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":944416066,\"burgers_burned\":0.39074075,\"sport\":22,\"device\":{\"workout_id\":\"12288971732-1-[1798928214]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":349,\"distance\":20.1927,\"speed_avg\":9.60262820351933,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1694,\"duration\":7570.19,\"altitude_min\":238.2,\"start_time\":\"2017-06-13 15:02:26 UTC\",\"descent\":676,\"speed_max\":12.4272,\"ascent\":693.2,\"cadence_avg\":80,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":943212517,\"burgers_burned\":3.137037,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":300,\"distance\":6.144819999999999,\"speed_avg\":9.928107303175633,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":482,\"duration\":2228.154,\"altitude_min\":242.6,\"start_time\":\"2017-06-13 06:24:17 UTC\",\"descent\":347,\"speed_max\":11.556,\"ascent\":334,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":942960463,\"burgers_burned\":0.8925926,\"sport\":0,\"device\":{\"workout_id\":\"12244588386-1-[1794746400]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":317,\"distance\":11.99904,\"speed_avg\":9.347382361246806,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":935,\"duration\":4621.245,\"altitude_min\":252.6,\"start_time\":\"2017-06-11 07:19:44 UTC\",\"descent\":465,\"speed_max\":12.3624,\"ascent\":451,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":941639877,\"burgers_burned\":1.7314814,\"sport\":0,\"device\":{\"workout_id\":\"12201159643-1-[1790591801]\"},\"live\":false},{\"altitude_max\":300.4,\"heart_rate_avg\":163,\"distance\":7.91395,\"speed_avg\":9.707912995418337,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":128,\"duration\":2934.742,\"heart_rate_max\":184,\"ascent\":253,\"cadence_avg\":81,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":935624317,\"live\":false,\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"privacy_workout\":1,\"calories\":647,\"altitude_min\":263.2,\"start_time\":\"2017-06-01 17:43:55 UTC\",\"descent\":275,\"speed_max\":12.3624,\"is_valid\":true,\"burgers_burned\":1.1981481,\"sport\":0,\"device\":{\"workout_id\":\"12007497301-1-[1772437594]\"}},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":761.6,\"distance\":27.836779999999997,\"speed_avg\":21.60205957248307,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":900,\"duration\":4639.021,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 10:22:36 UTC\",\"descent\":723,\"speed_max\":58.0104,\"ascent\":257,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":932613689,\"burgers_burned\":1.6666666,\"sport\":2,\"device\":{\"workout_id\":\"11918151251-1-[1763666795]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":760.4,\"distance\":9.12884,\"speed_avg\":10.583040959589145,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":577,\"duration\":3105.329,\"altitude_min\":327,\"start_time\":\"2017-05-28 08:45:20 UTC\",\"descent\":286,\"speed_max\":31.6764,\"ascent\":658,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":932613524,\"burgers_burned\":1.0685185,\"sport\":2,\"device\":{\"workout_id\":\"11918147597-1-[1763666281]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":53.27981,\"speed_avg\":15.481232546443739,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1693.72,\"duration\":12389.667000000001,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":1562.8,\"speed_max\":58.0104,\"ascent\":1049,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":16},\"id\":933153567,\"burgers_burned\":3.1365185,\"sport\":2,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":16.31419,\"speed_avg\":12.643073443642274,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":674,\"duration\":4645.317,\"altitude_min\":297.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":925,\"speed_max\":56.7684,\"ascent\":485,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":6},\"id\":932613422,\"burgers_burned\":1.2481482,\"sport\":2,\"device\":{\"workout_id\":\"11918145809-1-[1763666049]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":387,\"distance\":79.35486999999999,\"speed_avg\":20.406198286273117,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":2595,\"duration\":13999.547,\"altitude_min\":232,\"start_time\":\"2017-05-20 07:19:04 UTC\",\"descent\":1118,\"speed_max\":54.2808,\"ascent\":1039,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":927194081,\"burgers_burned\":4.8055553,\"sport\":2,\"device\":{\"workout_id\":\"11749445605-1-[1743840846]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":308.6,\"distance\":5.67201,\"speed_avg\":9.694947186199805,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":444,\"duration\":2106.173,\"altitude_min\":243,\"start_time\":\"2017-05-04 19:04:54 UTC\",\"descent\":264,\"speed_max\":12.4632,\"ascent\":202,\"cadence_avg\":82,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":917197608,\"burgers_burned\":0.82222223,\"sport\":0,\"device\":{\"workout_id\":\"11429787314-1-[1714706476]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":290,\"distance\":6.4600100000000005,\"speed_avg\":10.822841857192321,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":496,\"duration\":2148.792,\"altitude_min\":250.6,\"start_time\":\"2017-05-04 18:07:16 UTC\",\"descent\":233,\"speed_max\":13.3704,\"ascent\":255,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":917197524,\"burgers_burned\":0.91851854,\"sport\":0,\"device\":{\"workout_id\":\"11429784550-1-[1714706117]\"},\"live\":false}]}"
+				}
+			]
+		},
+		{
+			"name": "Update Workout",
+			"request": {
+				"url": {
+					"raw": "https://api.mobile.endomondo.com/mobile/api/workout/post?userId=1608787&authToken=K-0wvH-1TnSzjb3V2dh7KA&workoutId=956996298&input={\"duration\": 6000, \"distance\": 10.12, \"start_time\": \"2017-07-05 22:00:00 UTC\", \"end_time\": \"2017-07-05 23:40:00 UTC\"}",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mobile",
+						"endomondo",
+						"com"
+					],
+					"path": [
+						"mobile",
+						"api",
+						"workout",
+						"post"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1608787",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "authToken",
+							"value": "K-0wvH-1TnSzjb3V2dh7KA",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "workoutId",
+							"value": "956996298",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "input",
+							"value": "{\"duration\": 6000, \"distance\": 10.12, \"start_time\": \"2017-07-05 22:00:00 UTC\", \"end_time\": \"2017-07-05 23:40:00 UTC\"}",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "a4b59b8d-1031-4aed-b626-a42aff1ef138",
+					"name": "Successful authorization",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/auth?deviceId=device&email=patryk.najda@wp.pl&password=lw14tk0&country=PL&action=PAIR",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"auth"
+							],
+							"query": [
+								{
+									"key": "deviceId",
+									"value": "device",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "patryk.najda@wp.pl",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "password",
+									"value": "lw14tk0",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "country",
+									"value": "PL",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "action",
+									"value": "PAIR",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic Y3BzOkNmaDRoWmo2RnhZM0hZUW94RHIz",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "163",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 19:37:52 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "NOT_SET",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 499,
+					"body": "OK\naction=PAIRED\nauthToken=K-0wvH-1TnSzjb3V2dh7KA\nmeasure=METRIC\ndisplayName=Patryk Najda\nuserId=1608787\nfacebookConnected=true\nsecureToken=ENanqxwLTo2NzILEHT8tlg\n"
+				},
+				{
+					"id": "659453de-7665-403e-8d3a-d1174aeccfa7",
+					"name": "Successfull Workouts Response",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/api/workout/list?authToken=K-0wvH-1TnSzjb3V2dh7KA&fields=device,simple,basic,lcp_count&maxResults=20&userId=1608787",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"api",
+								"workout",
+								"list"
+							],
+							"query": [
+								{
+									"key": "authToken",
+									"value": "K-0wvH-1TnSzjb3V2dh7KA",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "fields",
+									"value": "device,simple,basic,lcp_count",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "maxResults",
+									"value": "20",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "userId",
+									"value": "1608787",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "deflate",
+									"value": "true",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "compression",
+									"value": "deflate",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+								"description": "",
+								"warning": "Restricted Header (use Postman Interceptor)"
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "2308",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 22:29:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "1608787",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 228,
+					"body": "{\"data\":[{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":304,\"distance\":6.28661,\"speed_avg\":10.982267689850046,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":123,\"privacy_workout\":1,\"calories\":485,\"duration\":2060.758,\"altitude_min\":156.4,\"start_time\":\"2017-06-27 15:05:47 UTC\",\"descent\":359,\"speed_max\":12.2616,\"ascent\":398,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":951859428,\"burgers_burned\":0.8981481,\"sport\":0,\"device\":{\"workout_id\":\"12536216680-1-[1822051140]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":334.6,\"distance\":14.359672547370609,\"speed_avg\":10.295722200863212,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":465.783,\"duration\":5021,\"altitude_min\":230.6,\"start_time\":\"2017-06-27 05:24:02 UTC\",\"descent\":406.2,\"speed_max\":188.392,\"ascent\":353.8,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":1},\"id\":955591728,\"burgers_burned\":0.8625611,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":286,\"distance\":8.46193,\"speed_avg\":10.606665536234136,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":86,\"privacy_workout\":1,\"calories\":658,\"duration\":2872.057,\"altitude_min\":229.2,\"start_time\":\"2017-06-25 19:21:39 UTC\",\"descent\":218,\"speed_max\":13.1688,\"ascent\":216,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":950739286,\"burgers_burned\":1.2185185,\"sport\":0,\"device\":{\"workout_id\":\"12499233544-1-[1818945406]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.2,\"distance\":10.02059,\"speed_avg\":9.918337451066973,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":786,\"duration\":3637.114,\"altitude_min\":232.6,\"start_time\":\"2017-06-24 07:41:34 UTC\",\"descent\":223,\"speed_max\":11.556,\"ascent\":224,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":949669968,\"burgers_burned\":1.4555556,\"sport\":0,\"device\":{\"workout_id\":\"12467372424-1-[1815387359]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":271.8,\"distance\":7.58807,\"speed_avg\":9.533459878194463,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":592,\"duration\":2865.387,\"altitude_min\":191.8,\"start_time\":\"2017-06-23 04:50:15 UTC\",\"descent\":261,\"speed_max\":12.8664,\"ascent\":208,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":949272874,\"burgers_burned\":1.0962963,\"sport\":0,\"device\":{\"workout_id\":\"12451017777-1-[1814051656]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":238.2,\"distance\":16.80997085571289,\"speed_avg\":10.53733154807007,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":1383,\"duration\":5743,\"altitude_min\":189.6,\"start_time\":\"2017-06-22 04:05:27 UTC\",\"descent\":330,\"speed_max\":11.9232,\"ascent\":352,\"cadence_avg\":84,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":948561514,\"burgers_burned\":2.5611112,\"sport\":0,\"device\":{\"workout_id\":\"12425264920-1-[1811875924]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":316.4,\"distance\":7.024109999999999,\"speed_avg\":9.68032356054414,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":552,\"duration\":2612.185,\"altitude_min\":224.2,\"start_time\":\"2017-06-20 18:33:49 UTC\",\"descent\":376,\"speed_max\":12.2256,\"ascent\":420,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":10},\"id\":947766244,\"burgers_burned\":1.0222223,\"sport\":0,\"device\":{\"workout_id\":\"12396625231-1-[1809265801]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":280.6,\"distance\":7.05785,\"speed_avg\":11.169875056765402,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":572.354,\"duration\":2274.713,\"altitude_min\":239.2,\"start_time\":\"2017-06-18 07:54:24 UTC\",\"descent\":182,\"speed_max\":14.7816,\"ascent\":187,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":4},\"id\":946428657,\"burgers_burned\":1.0599148,\"sport\":0,\"device\":{\"workout_id\":\"12354039776-1-[1805490388]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":263.6,\"distance\":5.26837,\"speed_avg\":2.060254250507619,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":64,\"privacy_workout\":1,\"calories\":211,\"duration\":9205.724,\"altitude_min\":212.6,\"start_time\":\"2017-06-15 08:59:00 UTC\",\"descent\":275,\"speed_max\":48.4704,\"ascent\":253,\"cadence_avg\":57,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":944416066,\"burgers_burned\":0.39074075,\"sport\":22,\"device\":{\"workout_id\":\"12288971732-1-[1798928214]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":349,\"distance\":20.1927,\"speed_avg\":9.60262820351933,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1694,\"duration\":7570.19,\"altitude_min\":238.2,\"start_time\":\"2017-06-13 15:02:26 UTC\",\"descent\":676,\"speed_max\":12.4272,\"ascent\":693.2,\"cadence_avg\":80,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":13},\"id\":943212517,\"burgers_burned\":3.137037,\"sport\":0,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":300,\"distance\":6.144819999999999,\"speed_avg\":9.928107303175633,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":482,\"duration\":2228.154,\"altitude_min\":242.6,\"start_time\":\"2017-06-13 06:24:17 UTC\",\"descent\":347,\"speed_max\":11.556,\"ascent\":334,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":8},\"id\":942960463,\"burgers_burned\":0.8925926,\"sport\":0,\"device\":{\"workout_id\":\"12244588386-1-[1794746400]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":317,\"distance\":11.99904,\"speed_avg\":9.347382361246806,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":935,\"duration\":4621.245,\"altitude_min\":252.6,\"start_time\":\"2017-06-11 07:19:44 UTC\",\"descent\":465,\"speed_max\":12.3624,\"ascent\":451,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":941639877,\"burgers_burned\":1.7314814,\"sport\":0,\"device\":{\"workout_id\":\"12201159643-1-[1790591801]\"},\"live\":false},{\"altitude_max\":300.4,\"heart_rate_avg\":163,\"distance\":7.91395,\"speed_avg\":9.707912995418337,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":128,\"duration\":2934.742,\"heart_rate_max\":184,\"ascent\":253,\"cadence_avg\":81,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":935624317,\"live\":false,\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"privacy_workout\":1,\"calories\":647,\"altitude_min\":263.2,\"start_time\":\"2017-06-01 17:43:55 UTC\",\"descent\":275,\"speed_max\":12.3624,\"is_valid\":true,\"burgers_burned\":1.1981481,\"sport\":0,\"device\":{\"workout_id\":\"12007497301-1-[1772437594]\"}},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":761.6,\"distance\":27.836779999999997,\"speed_avg\":21.60205957248307,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":900,\"duration\":4639.021,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 10:22:36 UTC\",\"descent\":723,\"speed_max\":58.0104,\"ascent\":257,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":932613689,\"burgers_burned\":1.6666666,\"sport\":2,\"device\":{\"workout_id\":\"11918151251-1-[1763666795]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":760.4,\"distance\":9.12884,\"speed_avg\":10.583040959589145,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":577,\"duration\":3105.329,\"altitude_min\":327,\"start_time\":\"2017-05-28 08:45:20 UTC\",\"descent\":286,\"speed_max\":31.6764,\"ascent\":658,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":932613524,\"burgers_burned\":1.0685185,\"sport\":2,\"device\":{\"workout_id\":\"11918147597-1-[1763666281]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":53.27981,\"speed_avg\":15.481232546443739,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":1693.72,\"duration\":12389.667000000001,\"altitude_min\":278.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":1562.8,\"speed_max\":58.0104,\"ascent\":1049,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":16},\"id\":933153567,\"burgers_burned\":3.1365185,\"sport\":2,\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":828.8,\"distance\":16.31419,\"speed_avg\":12.643073443642274,\"privacy_map\":2,\"owner_id\":1608787,\"privacy_workout\":2,\"calories\":674,\"duration\":4645.317,\"altitude_min\":297.8,\"start_time\":\"2017-05-28 07:13:23 UTC\",\"descent\":925,\"speed_max\":56.7684,\"ascent\":485,\"is_valid\":false,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":6},\"id\":932613422,\"burgers_burned\":1.2481482,\"sport\":2,\"device\":{\"workout_id\":\"11918145809-1-[1763666049]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":387,\"distance\":79.35486999999999,\"speed_avg\":20.406198286273117,\"privacy_map\":1,\"owner_id\":1608787,\"privacy_workout\":1,\"calories\":2595,\"duration\":13999.547,\"altitude_min\":232,\"start_time\":\"2017-05-20 07:19:04 UTC\",\"descent\":1118,\"speed_max\":54.2808,\"ascent\":1039,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":12},\"id\":927194081,\"burgers_burned\":4.8055553,\"sport\":2,\"device\":{\"workout_id\":\"11749445605-1-[1743840846]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":308.6,\"distance\":5.67201,\"speed_avg\":9.694947186199805,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":87,\"privacy_workout\":1,\"calories\":444,\"duration\":2106.173,\"altitude_min\":243,\"start_time\":\"2017-05-04 19:04:54 UTC\",\"descent\":264,\"speed_max\":12.4632,\"ascent\":202,\"cadence_avg\":82,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":11},\"id\":917197608,\"burgers_burned\":0.82222223,\"sport\":0,\"device\":{\"workout_id\":\"11429787314-1-[1714706476]\"},\"live\":false},{\"owner\":{\"premium_type\":\"pro\",\"picture_url\":\"https://www.endomondo.com/resources/gfx/image/5279039/9b74d6f1edb76c917119a627435424d1/big.jpg\",\"name\":\"Patryk Najda\",\"last_name\":\"Najda\",\"id\":1608787,\"first_name\":\"Patryk\",\"picture\":5279039},\"altitude_max\":290,\"distance\":6.4600100000000005,\"speed_avg\":10.822841857192321,\"privacy_map\":1,\"owner_id\":1608787,\"cadence_max\":88,\"privacy_workout\":1,\"calories\":496,\"duration\":2148.792,\"altitude_min\":250.6,\"start_time\":\"2017-05-04 18:07:16 UTC\",\"descent\":233,\"speed_max\":13.3704,\"ascent\":255,\"cadence_avg\":83,\"is_valid\":true,\"lcp_count\":{\"comments\":0,\"peptalks\":0,\"likes\":9},\"id\":917197524,\"burgers_burned\":0.91851854,\"sport\":0,\"device\":{\"workout_id\":\"11429784550-1-[1714706117]\"},\"live\":false}]}"
+				},
+				{
+					"id": "9d437470-f673-41ea-a6a9-b7fd4519d68b",
+					"name": "Successful Workout Update",
+					"originalRequest": {
+						"url": {
+							"raw": "https://api.mobile.endomondo.com/mobile/api/workout/post?userId=1608787&authToken=K-0wvH-1TnSzjb3V2dh7KA&workoutId=956996298&input={\"duration\": 6000, \"distance\": 10.12, \"start_time\": \"2017-07-05 22:00:00 UTC\", \"end_time\": \"2017-07-05 23:40:00 UTC\"}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mobile",
+								"endomondo",
+								"com"
+							],
+							"path": [
+								"mobile",
+								"api",
+								"workout",
+								"post"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1608787",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "authToken",
+									"value": "K-0wvH-1TnSzjb3V2dh7KA",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "workoutId",
+									"value": "956996298",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "input",
+									"value": "{\"duration\": 6000, \"distance\": 10.12, \"start_time\": \"2017-07-05 22:00:00 UTC\", \"end_time\": \"2017-07-05 23:40:00 UTC\"}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Dalvik/1.4.0 (Linux; U; Android 2.3.6; GT-S5570 Build/GINGERBREAD)",
+								"description": ""
+							}
+						],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "no-store, no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "27",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Wed, 05 Jul 2017 22:55:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "P3P",
+							"key": "P3P",
+							"value": "CP=\"IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT\"",
+							"description": "This header is supposed to set P3P policy, in the form of P3P:CP=\"your_compact_policy\". However, P3P did not take off, most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies."
+						},
+						{
+							"name": "Pragma",
+							"key": "Pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Endo-ID",
+							"key": "X-Endo-ID",
+							"value": "1608787",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-UA-Compatible",
+							"key": "X-UA-Compatible",
+							"value": "IE=9",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 466,
+					"body": "{\"data\":\"OK\",\"change\":true}"
+				}
+			]
+		}
+	]
+}
